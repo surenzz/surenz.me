@@ -1,0 +1,122 @@
+/* surenzxx */
+
+
+/***************************
+****************************
+CSS FOR BASICALLY EVERYTHING
+****************************
+***************************/
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 3%;
+    color: #212121;
+}
+
+p {
+    font-size: 125%;
+
+}
+
+.intro {
+    font-family: 'Lato', sans-serif, normal;
+    font-size: 550%;
+    margin: 0;
+    padding-bottom: 0.5%;
+    font-weight: 700;
+}
+
+#name {
+    color: #26C646;
+}
+
+.column-left {
+    float: left;
+    width: 68%;
+    margin-top: 0.5%;
+    margin-right: 2%;
+    font-size: 125%;
+}
+
+.column-right {
+    margin-top:0.5%;
+    float: left;
+    width: 28%;
+    margin-left: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: #26C646;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+.phone-number{
+    color: #26C646;
+    font-weight: 700;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    padding-right: 80px;
+    margin: 0;
+    font-size: 125%;
+    font-weight: 700;
+}
+
+.social-icons {
+    color: #26C646;
+    text-decoration: none;
+    padding-right: 2%;
+    padding-top: 2%;
+    font-size: 150%;
+}
+/***************************
+****************************
+Resources Page
+****************************
+***************************/
+
+#resources-introduction {
+    font-family: 'Lato', sans-serif, normal;
+    font-size: 325%;
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 1%;
+    /* padding-top: 0%;
+    font-size: 300%;
+    font-family: 'Lato', sans-serif, normal;     */
+}
+
+.sub-title {
+    font-size: 200%;
+    margin-bottom: 0%;
+}
+
+.resources-list {
+    margin-top: 0.5%;
+    font-size: 1.5vw;
+    list-style-type: circle;
+    margin-left: 0.000000001%;
+}
+
+li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #26C646;
+    font-weight: lighter;
+}
