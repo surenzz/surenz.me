@@ -1,4 +1,12 @@
-/* Base Styles (unchanged) */
+/* surenzxx */
+
+
+/***************************
+****************************
+CSS FOR BASICALLY EVERYTHING
+****************************
+***************************/
+
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -9,34 +17,57 @@ body {
     color: #212121;
 }
 
-/* Responsive layout for larger screens */
-@media (min-width: 1024px) {
-    body {
-        margin-left: 12%;  /* Increase margins for wider screens */
-        margin-right: 12%;
-    }
-
-    .intro {
-        font-size: 4rem; /* Slightly reduce the header size */
-    }
-    
-    .column-left {
-        width: 50%;  /* Balance the width between text and image */
-        margin-right: 4%;
-    }
-
-    .column-right {
-        width: 40%; /* Slightly reduce image container width for better balance */
-        margin-left: 0; /* Reset margin-left */
-        text-align: right; /* Align image to the right */
-    }
-
-    .profile-pic {
-        width: 250px; /* Slightly smaller image size */
-    }
+p {
+    font-size: 125%;
 }
 
-/* Styles for mobile (unchanged) */
+.intro {
+    font-family: 'Lato', sans-serif, normal;
+    font-size: 4rem; /* Adjusted */
+    margin: 0;
+    padding-bottom: 0.5%;
+    font-weight: 700;
+}
+
+#name {
+    color: #26C646;
+}
+
+.column-left {
+    float: left;
+    width: 68%;
+    margin-top: 0.5%;
+    margin-right: 2%;
+    font-size: 1.25rem;
+}
+
+.column-right {
+    margin-top: 0.5%;
+    float: left;
+    width: 28%;
+    margin-left: 2%;
+}
+
+/* Ensuring Circular Profile Picture */
+.profile-pic {
+    border-radius: 50%;  /* Circular shape */
+    width: 250px;  /* Adjusted size for desktop */
+    height: 250px; /* Ensures circular shape */
+    object-fit: cover; /* Ensures image fills the circle properly */
+}
+
+/* Style for Links */
+a {
+    text-decoration: none;
+    color: #26C646;  /* Original green color */
+    font-weight: 700;
+}
+
+a:hover {
+    color: #ff4500;  /* Hover effect color */
+}
+
+/* Add Responsive Mobile Styles */
 @media (max-width: 768px) {
     body {
         margin-left: 4%;
@@ -54,14 +85,42 @@ body {
     }
 
     .profile-pic {
-        width: 100px; /* Smaller profile picture */
+        width: 100px; /* Smaller profile picture for mobile */
+        height: 100px; /* Ensures circular shape on mobile */
     }
 
     .intro {
-        font-size: 3rem; /* Reduce heading size */
+        font-size: 3rem; /* Reduce heading size for mobile */
     }
 
     p {
         font-size: 1.1rem;
+    }
+}
+
+/* Desktop View Improvements */
+@media (min-width: 1024px) {
+    body {
+        margin-left: 12%;  /* Increase margins for larger screens */
+        margin-right: 12%;
+    }
+
+    .intro {
+        font-size: 4rem; /* Slightly reduced header size */
+    }
+
+    .column-left {
+        width: 50%;  /* Balanced text-image column width */
+        margin-right: 4%;
+    }
+
+    .column-right {
+        width: 40%; /* Slightly smaller image column */
+        text-align: right; /* Align the image to the right */
+    }
+
+    .profile-pic {
+        width: 250px; /* Adjusted image size for desktop */
+        height: 250px; /* Ensures circular shape on desktop */
     }
 }
