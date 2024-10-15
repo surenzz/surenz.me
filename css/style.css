@@ -18,6 +18,21 @@ p {
     font-size: 125%;
 }
 
+.dm-me {
+    margin-bottom: 0;
+}
+
+.small-p {
+    margin-top: 1%;
+    font-size: 96%;
+}
+
+.light-font{
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 1%;
+}
+
 .intro {
     font-family: 'Lato', sans-serif, normal;
     font-size: 4rem; /* Adjusted */
@@ -51,6 +66,15 @@ p {
     width: 250px;  /* Adjusted size for desktop */
     height: 250px; /* Ensures circular shape */
     object-fit: cover; /* Ensures image fills the circle properly */
+}
+
+.recipe-pic {
+    width: 500px;  /* Adjusted size for desktop */
+    object-fit: cover; /* Ensures image fills the circle properly */
+}
+
+.recipe-figure {
+    margin-left: 0;
 }
 
 /* Style for Links */
@@ -94,6 +118,16 @@ a:hover {
     p {
         font-size: 1.1rem;
     }
+
+    .container {
+        flex-direction: column;
+      }
+    
+      .recipe-image-section,
+      .recipe-card {
+        margin-right: 0;
+        max-width: 100%;
+      }
 }
 
 /* Desktop View Improvements */
@@ -121,4 +155,142 @@ a:hover {
         width: 250px; /* Adjusted image size for desktop */
         height: 250px; /* Ensures circular shape on desktop */
     }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows elements to wrap if screen is too small */
+  }
+  
+  .recipe-image-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .recipe-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+  
+  .recipe-card {
+    flex: 1;
+    background-color: white;
+    border: 2px solid #26C646;
+    border-radius: 2px;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .recipe-header {
+    background-color: #26C646;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+  }
+  
+  .recipe-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .recipe-title h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .time {
+    text-align: center;
+  }
+  
+  .time p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .recipe-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .save-btn, .print-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .save-btn {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .print-btn {
+    background-color: #26C646;
+    border: 1px solid #FFD700;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for crossed-out text */
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color:#26C646
+}
+
+/* Cross out the label when the checkbox is checked */
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888; /* You can change this color for a faded look when crossed out */
+}
+
+.equipment-list label,
+.ingredients-list label {
+    font-family: 'Roboto', sans-serif;
+}
+
+.equipment-list {
+    margin-bottom: 30px;
+}
+
+.ingredients-list {
+    margin-bottom: 50px;
 }
