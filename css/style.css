@@ -27,7 +27,7 @@ p {
     font-size: 96%;
 }
 
-.light-font{
+.light-font {
     margin-top: 0;
     font-weight: 300;
     margin-bottom: 1%;
@@ -35,7 +35,8 @@ p {
 
 .intro {
     font-family: 'Lato', sans-serif, normal;
-    font-size: 4rem; /* Adjusted */
+    font-size: 4rem;
+    /* Adjusted */
     margin: 0;
     padding-bottom: 0.5%;
     font-weight: 700;
@@ -62,15 +63,21 @@ p {
 
 /* Ensuring Circular Profile Picture */
 .profile-pic {
-    border-radius: 50%;  /* Circular shape */
-    width: 250px;  /* Adjusted size for desktop */
-    height: 250px; /* Ensures circular shape */
-    object-fit: cover; /* Ensures image fills the circle properly */
+    border-radius: 50%;
+    /* Circular shape */
+    width: 250px;
+    /* Adjusted size for desktop */
+    height: 250px;
+    /* Ensures circular shape */
+    object-fit: cover;
+    /* Ensures image fills the circle properly */
 }
 
 .recipe-pic {
-    width: 500px;  /* Adjusted size for desktop */
-    object-fit: cover; /* Ensures image fills the circle properly */
+    width: 500px;
+    /* Adjusted size for desktop */
+    object-fit: cover;
+    /* Ensures image fills the circle properly */
 }
 
 .recipe-figure {
@@ -80,12 +87,14 @@ p {
 /* Style for Links */
 a {
     text-decoration: none;
-    color: #26C646;  /* Original green color */
+    color: #26C646;
+    /* Original green color */
     font-weight: 700;
 }
 
 a:hover {
-    color: #ff4500;  /* Hover effect color */
+    color: #ff4500;
+    /* Hover effect color */
 }
 
 /* Add Responsive Mobile Styles */
@@ -95,10 +104,12 @@ a:hover {
         margin-right: 4%;
     }
 
-    .column-left, .column-right {
+    .column-left,
+    .column-right {
         width: 100%;
         float: none;
-        text-align: center; /* Center the text and image for better readability */
+        text-align: center;
+        /* Center the text and image for better readability */
     }
 
     .column-right {
@@ -106,13 +117,17 @@ a:hover {
     }
 
     .profile-pic {
-        width: 100px; /* Smaller profile picture for mobile */
-        height: 100px; /* Ensures circular shape on mobile */
+        width: 100px;
+        /* Smaller profile picture for mobile */
+        height: 100px;
+        /* Ensures circular shape on mobile */
     }
 
     .intro {
-        font-size: 3rem; /* Reduce heading size for mobile */
-        text-align: center; /* Center the @surenz2 on mobile */
+        font-size: 3rem;
+        /* Reduce heading size for mobile */
+        text-align: center;
+        /* Center the @surenz2 on mobile */
     }
 
     p {
@@ -125,10 +140,10 @@ a:hover {
 
     /* Ensures recipe images are responsive and fill the available space */
     .recipe-pic {
-        max-width: 100%; 
-        height: auto; 
+        max-width: 100%;
+        height: auto;
     }
-    
+
     /* Makes video elements responsive */
     video {
         width: 100%;
@@ -136,39 +151,46 @@ a:hover {
 
     .container {
         flex-direction: column;
-      }
-    
-      .recipe-image-section,
-      .recipe-card {
+    }
+
+    .recipe-image-section,
+    .recipe-card {
         margin-right: 0;
         max-width: 100%;
-      }
+    }
 }
 
 /* Desktop View Improvements */
 @media (min-width: 1024px) {
     body {
-        margin-left: 12%;  /* Increase margins for larger screens */
+        margin-left: 12%;
+        /* Increase margins for larger screens */
         margin-right: 12%;
     }
 
     .intro {
-        font-size: 4rem; /* Slightly reduced header size */
+        font-size: 4rem;
+        /* Slightly reduced header size */
     }
 
     .column-left {
-        width: 50%;  /* Balanced text-image column width */
+        width: 50%;
+        /* Balanced text-image column width */
         margin-right: 4%;
     }
 
     .column-right {
-        width: 40%; /* Slightly smaller image column */
-        text-align: right; /* Align the image to the right */
+        width: 40%;
+        /* Slightly smaller image column */
+        text-align: right;
+        /* Align the image to the right */
     }
 
     .profile-pic {
-        width: 250px; /* Adjusted image size for desktop */
-        height: 250px; /* Ensures circular shape on desktop */
+        width: 250px;
+        /* Adjusted image size for desktop */
+        height: 250px;
+        /* Ensures circular shape on desktop */
     }
 
     video {
@@ -180,92 +202,94 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allows elements to wrap if screen is too small */
-  }
-  
-  .recipe-image-section {
+    flex-wrap: wrap;
+    /* Allows elements to wrap if screen is too small */
+}
+
+.recipe-image-section {
     flex: 1;
     margin-right: 20px;
-  }
-  
-  .recipe-pic {
+}
+
+.recipe-pic {
     max-width: 100%;
     height: auto;
     border-radius: 2px;
-  }
-  
-  .recipe-card {
+}
+
+.recipe-card {
     flex: 1;
     background-color: white;
     border: 2px solid #26C646;
     border-radius: 2px;
     padding: 20px;
     max-width: 600px;
-  }
-  
-  .recipe-header {
+}
+
+.recipe-header {
     background-color: #26C646;
     padding: 10px;
     border-radius: 6px 6px 0 0;
     text-align: center;
-  }
-  
-  .recipe-header h3 {
+}
+
+.recipe-header h3 {
     margin: 0;
     font-size: 16px;
     color: #333;
-  }
-  
-  .recipe-title h1 {
+}
+
+.recipe-title h1 {
     font-size: 22px;
     font-weight: bold;
     color: #333;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  
-  .recipe-info {
+}
+
+.recipe-info {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .time {
+}
+
+.time {
     text-align: center;
-  }
-  
-  .time p {
+}
+
+.time p {
     margin: 0;
     color: #333;
-  }
-  
-  .recipe-actions {
+}
+
+.recipe-actions {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-  }
-  
-  .save-btn, .print-btn {
+}
+
+.save-btn,
+.print-btn {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
-  }
-  
-  .save-btn {
+}
+
+.save-btn {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
-  }
-  
-  .print-btn {
+}
+
+.print-btn {
     background-color: #26C646;
     border: 1px solid #FFD700;
-  }
+}
 
-  ul {
+ul {
     list-style-type: none;
     padding-left: 0;
 }
@@ -280,7 +304,7 @@ li {
     margin-bottom: 15px;
 }
 
-ol{
+ol {
     padding-left: 2%;
     font-size: 125%;
 }
@@ -293,20 +317,22 @@ label {
     font-size: 16px;
     color: #333;
     margin-left: 10px;
-    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for crossed-out text */
+    transition: color 0.3s, text-decoration 0.3s;
+    /* Smooth transition for crossed-out text */
 }
 
 input[type="checkbox"] {
     width: 18px;
     height: 18px;
     cursor: pointer;
-    accent-color:#26C646
+    accent-color: #26C646
 }
 
 /* Cross out the label when the checkbox is checked */
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked+label {
     text-decoration: line-through;
-    color: #888; /* You can change this color for a faded look when crossed out */
+    color: #888;
+    /* You can change this color for a faded look when crossed out */
 }
 
 .equipment-list label,
