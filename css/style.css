@@ -119,6 +119,21 @@ a:hover {
         font-size: 1.1rem;
     }
 
+    .small-p {
+        font-size: 1rem;
+    }
+
+    /* Ensures recipe images are responsive and fill the available space */
+    .recipe-pic {
+        max-width: 100%; 
+        height: auto; 
+    }
+    
+    /* Makes video elements responsive */
+    video {
+        width: 100%;
+    }
+
     .container {
         flex-direction: column;
       }
@@ -154,6 +169,10 @@ a:hover {
     .profile-pic {
         width: 250px; /* Adjusted image size for desktop */
         height: 250px; /* Ensures circular shape on desktop */
+    }
+
+    video {
+        width: 40%;
     }
 }
 
