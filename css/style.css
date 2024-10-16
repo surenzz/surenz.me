@@ -1,8 +1,12 @@
-/***************************
-****************************
-CSS FOR BASICALLY EVERYTHING
-****************************
-***************************/
+/* TIPS AND TRICKS
+font-size: rem
+width: % in combination with a max-width, ch
+height: question urself "do i rly need to set height" if yes -> use a min-height
+padding/margin: rem or em, kevin often uses em for padding of buttons
+media queries: em
+px only for little things like shadows, borders etc.
+via https://www.youtube.com/watch?v=N5wpD9Ov_To 
+*/
 
 html,
 body {
@@ -35,7 +39,6 @@ p {
 
 .intro {
     font-family: 'Lato', sans-serif, normal;
-    font-size: 4rem;
     /* Adjusted */
     margin: 0;
     padding-bottom: 0.5%;
@@ -104,6 +107,14 @@ a:hover {
         margin-right: 4%;
     }
 
+    p {
+        font-size: 1.1rem;
+    }
+
+    video {
+        width: 100%;
+    }
+
     .column-left,
     .column-right {
         width: 100%;
@@ -114,24 +125,21 @@ a:hover {
 
     .column-right {
         margin-top: 2rem;
+        order: -1;
     }
 
     .profile-pic {
-        width: 100px;
+        width: 23vh;
         /* Smaller profile picture for mobile */
-        height: 100px;
+        height: 23vh;
         /* Ensures circular shape on mobile */
     }
 
     .intro {
-        font-size: 3rem;
+        font-size: 3.5rem;
         /* Reduce heading size for mobile */
         text-align: center;
         /* Center the @surenz2 on mobile */
-    }
-
-    p {
-        font-size: 1.1rem;
     }
 
     .small-p {
@@ -144,12 +152,8 @@ a:hover {
         height: auto;
     }
 
-    /* Makes video elements responsive */
-    video {
-        width: 100%;
-    }
-
     .container {
+        display: flex;
         flex-direction: column;
     }
 
