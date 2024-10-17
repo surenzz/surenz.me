@@ -129,9 +129,9 @@ a:hover {
     }
 
     .profile-pic {
-        width: 23vh;
+        width: 100px;
         /* Smaller profile picture for mobile */
-        height: 23vh;
+        height: 100px;
         /* Ensures circular shape on mobile */
     }
 
@@ -191,9 +191,9 @@ a:hover {
     }
 
     .profile-pic {
-        width: 250px;
+        width: 325px;
         /* Adjusted image size for desktop */
-        height: 250px;
+        height: 325px;
         /* Ensures circular shape on desktop */
     }
 
