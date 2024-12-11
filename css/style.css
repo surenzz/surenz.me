@@ -361,8 +361,8 @@ input[type="checkbox"]:checked+label {
 
 .slider-wrapper {
 	position: relative;
-	max-width: 700px;
-	margin: 0;
+	max-width: 48rem;
+	margin: 0 auto;
 }
 
 .slider {
@@ -371,42 +371,37 @@ input[type="checkbox"]:checked+label {
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
-	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-	border-radius: 0.5rem;
-	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-	scrollbar-width: none; /* Hide scrollbar Firefox */
+	-ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar for Firefox */
+	/* No box-shadow or border-radius if you want it more like Instagram */
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .slider::-webkit-scrollbar {
 	display: none;
 }
 
-/* Apply the same styles to both images and videos */
 .slider img, .slider video {
 	flex: 1 0 100%;
 	scroll-snap-align: start;
 	object-fit: cover;
-	/* Ensure the media occupies full slide space */
 	width: 100%;
 	height: 100%;
 }
 
+/* Pagination dots below the carousel */
 .slider-nav {
 	display: flex;
-	column-gap: 1rem;
-	position: absolute;
-	bottom: 1.25rem;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.5rem;
+	margin-top: 0.5rem; /* Space between carousel and dots */
 }
 
 .slider-nav a {
 	width: 0.5rem;
 	height: 0.5rem;
 	border-radius: 50%;
-	background-color: #fff;
+	background-color: #0095f6; /* Instagram-like blue */
 	opacity: 0.75;
 	transition: opacity ease 250ms;
 }
@@ -415,15 +410,21 @@ input[type="checkbox"]:checked+label {
 	opacity: 1;
 }
 
-/* Mobile-specific adjustments */
+/* Mobile adjustments */
 @media (max-width: 600px) {
 	.slider-wrapper {
 		max-width: 100%;
 		width: 100%;
 		margin: 0;
+		padding: 0;
 	}
 
 	.slider {
-		aspect-ratio: 1 / 1; /* More square, similar to Instagram posts */
+		aspect-ratio: 4 / 5; /* Square ratio for mobile, like Instagram */
+	}
+
+	.slider-nav a {
+		width: 0.4rem;
+		height: 0.4rem;
 	}
 }

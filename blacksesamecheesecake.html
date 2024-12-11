@@ -44,7 +44,7 @@
                             <source src="./docs/assets/img/besame_vid.mp4" type="video/mp4" />
                         </video>
 			            <img id="slide-3" class="recipe-pic" src="./docs/assets/img/besame.jpeg">
-			            <img id="slide-3" class="recipe-pic" src="./docs/assets/img/besame2.jpeg">
+			            <img id="slide-4" class="recipe-pic" src="./docs/assets/img/besame2.jpeg">
                     </div>
                     <div class="slider-nav">
                         <a href="#slide-1"></a>
@@ -64,9 +64,35 @@
 
 		<div class="etc-section">
 			<h2></h2>
-			<p><b>To Do:</b> I gotta improve the presentation bc someone told me it looks like I'm eating cement paste 😡 </p>
+			<p><b>To Do:</b> I gotta improve the presentation bc someone told me it looks like I'm eating cement paste 😡  </p>
 			<br>
 		</div>
+        
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('.slider-nav a');
+
+            function updateActiveDot() {
+                // Get the current hash, e.g. "#slide-1"
+                const currentHash = window.location.hash || '#slide-1';
+
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentHash) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+
+            // Update active dot on page load
+            updateActiveDot();
+
+            // Update active dot whenever the hash changes (e.g., user clicks a nav link)
+            window.addEventListener('hashchange', updateActiveDot);
+        });
+    </script>
 
         </body>
     </html>
