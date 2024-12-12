@@ -102,20 +102,12 @@
 					</svg>
 					Print
 				</button>
-
-				<label class="inline-flex items-center cursor-pointer">
-					<input type="checkbox" value="" class="cook-mode sr-only peer" />
-					<div
-						class="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
-					<span class="ms-1 text-lg font-medium text-gray-900 dark:text-gray-300">Cook Mode </span
-					><span class="ms-1 text-sm font-light text-gray-900 dark:text-gray-300"> (keep screen awake)</span>
-				</label>
 			</div>
 		</div>
 		<!-- Hidden success alert -->
 		<div
 			id="alert-border-3"
-			class="hidden flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800 mt-5"
+			class="copy-success-alert hidden flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800 mt-5"
 			role="alert">
 			<svg
 				class="flex-shrink-0 w-4 h-4"
@@ -148,6 +140,17 @@
 				</svg>
 			</button>
 		</div>
+		
+		<div class="pt-3">
+						<label class="inline-flex items-center cursor-pointer ml-0">
+					<input type="checkbox" value="" class="cook-mode sr-only peer" />
+					<div
+						class="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
+					<span class="ms-1 text-lg font-medium text-gray-900 dark:text-gray-300">Cook Mode </span
+					><span class="ms-1 text-sm font-light text-gray-900 dark:text-gray-300"> (keep screen awake)</span>
+				</label>
+		</div>
+
 		<div id="text-content">
 			<div class="equipment-section">
 				<h2 class="text-2xl font-bold pt-5">Equipment</h2>
