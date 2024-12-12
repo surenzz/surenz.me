@@ -139,11 +139,16 @@ a:hover {
         object-fit: cover; /* Ensures the image fits within the circle */
     }
 
-    .intro {
+    .intro-name {
         font-size: 3.5rem;
         /* Reduce heading size for mobile */
         text-align: center;
         /* Center the @surenz2 on mobile */
+    }
+    
+    .intro {
+    font-size: 3.5rem;
+    /* Reduce heading size for mobile */
     }
 
     .small-p {
