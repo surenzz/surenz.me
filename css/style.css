@@ -10,7 +10,7 @@ via https://www.youtube.com/watch?v=N5wpD9Ov_To
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     margin-left: 8%;
     margin-right: 8%;
@@ -38,7 +38,7 @@ p {
 }
 
 .intro {
-    font-family: 'Lato', sans-serif, normal;
+    font-family: "Lato", sans-serif, normal;
     /* Adjusted */
     margin: 0;
     padding-bottom: 0.5%;
@@ -46,7 +46,7 @@ p {
 }
 
 #name {
-    color: #26C646;
+    color: #26c646;
 }
 
 .column-left {
@@ -90,7 +90,7 @@ p {
 /* Style for Links */
 a {
     text-decoration: none;
-    color: #26C646;
+    color: #26c646;
     /* Original green color */
     font-weight: 700;
 }
@@ -126,7 +126,7 @@ a:hover {
     .column-right {
         display: flex;
         justify-content: center; /* Centers horizontally */
-        align-items: center;    /* Centers vertically */
+        align-items: center; /* Centers vertically */
         flex-direction: column; /* Ensures content stacks properly */
         margin-top: 2rem;
         order: -1;
@@ -135,8 +135,8 @@ a:hover {
     .profile-pic {
         width: 150px;
         height: 150px;
-        border-radius: 50%;     /* Makes the image circular */
-        object-fit: cover;      /* Ensures the image fits within the circle */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image fits within the circle */
     }
 
     .intro {
@@ -162,7 +162,8 @@ a:hover {
     }
 
     .recipe-image-section,
-    .recipe-card {
+    .recipe-card,
+    .copy-success-alert{
         margin-right: 0;
         max-width: 100%;
     }
@@ -228,14 +229,18 @@ a:hover {
 .recipe-card {
     flex: 1;
     background-color: white;
-    border: 2px solid #26C646;
+    border: 2px solid #26c646;
     border-radius: 2px;
     padding: 20px;
     max-width: 600px;
 }
 
+.copy-success-alert {
+    width: 600px;
+}
+
 .recipe-header {
-    background-color: #26C646;
+    background-color: #26c646;
     padding: 10px;
     border-radius: 6px 6px 0 0;
     text-align: center;
@@ -293,8 +298,8 @@ a:hover {
 }
 
 .print-btn {
-    background-color: #26C646;
-    border: 1px solid #FFD700;
+    background-color: #26c646;
+    border: 1px solid #ffd700;
 }
 
 ul {
@@ -325,7 +330,9 @@ label {
     font-size: 16px;
     color: #333;
     margin-left: 10px;
-    transition: color 0.3s, text-decoration 0.3s;
+    transition:
+        color 0.3s,
+        text-decoration 0.3s;
     /* Smooth transition for crossed-out text */
 }
 
@@ -333,19 +340,24 @@ input[type="checkbox"] {
     width: 18px;
     height: 18px;
     cursor: pointer;
-    accent-color: #26C646
+    accent-color: #26c646;
 }
 
 /* Cross out the label when the checkbox is checked */
-input[type="checkbox"]:checked+label {
+input[type="checkbox"]:checked + label {
     text-decoration: line-through;
     color: #888;
     /* You can change this color for a faded look when crossed out */
 }
 
+[type="checkbox"]:checked,
+[type="radio"]:checked {
+    background-color: #046c4e;
+}
+
 .equipment-list label,
 .ingredients-list label {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .equipment-list {
