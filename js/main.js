@@ -151,12 +151,14 @@ function showSuccessAlert(alertContainer, message, isError = false) {
     }
 
     // Make the alert visible
-    alertContainer.classList.remove('hidden');
-
+    alertContainer.classList.remove('hidden', 'fade-out');
     // Auto-dismiss the alert after 5 seconds
     setTimeout(() => {
-      alertContainer.classList.add('hidden');
-    }, 2000);
+      alertContainer.classList.add('fade-out'); // Add fade-out class
+      setTimeout(() => {
+        alertContainer.classList.add('hidden'); // Fully hide after animation
+      }, 300); // Match the duration in the CSS
+    }, 3000); // Dismiss after 5 seconds
   }
 }
 
@@ -166,7 +168,10 @@ if (dismissButton) {
   dismissButton.addEventListener('click', () => {
     const alertContainer = document.getElementById('alert-border-3');
     if (alertContainer) {
-      alertContainer.classList.add('hidden');
+      alertContainer.classList.add('fade-out'); // Add fade-out class
+      setTimeout(() => {
+        alertContainer.classList.add('hidden'); // Fully hide after animation
+      }, 500); // Match the duration in the CSS
     }
   });
 }

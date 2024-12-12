@@ -1,140 +1,259 @@
 <!-- surenz2 -->
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<html lang=en>
-    <head>
-        <title>Cassave Cake</title>
-        <meta charset="utf-8">
-        <!-- from here: https://css-tricks.com/emoji-as-a-favicon/ -->
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇬🇾</text></svg>">
-        <!-- Style sheet links -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400" rel="stylesheet">
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+	<head>
+		<title>Cassava Cake</title>
+		<meta charset="utf-8" />
+		<!-- from here: https://css-tricks.com/emoji-as-a-favicon/ -->
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇬🇾</text></svg>" />
+		<!-- Style sheet links -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400" rel="stylesheet" />
 		<link href="./docs/assets/cdn/flowbite.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Javascript links -->
-        <script src="js/main.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Javascript links -->
+		<script src="js/main.js"></script>
 		<!-- Microsoft Clarity -->
 		<script type="text/javascript">
-			(function(c,l,a,r,i,t,y){
-				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+			(function (c, l, a, r, i, t, y) {
+				c[a] =
+					c[a] ||
+					function () {
+						(c[a].q = c[a].q || []).push(arguments);
+					};
+				t = l.createElement(r);
+				t.async = 1;
+				t.src = "https://www.clarity.ms/tag/" + i;
+				y = l.getElementsByTagName(r)[0];
+				y.parentNode.insertBefore(t, y);
 			})(window, document, "clarity", "script", "ojo3nfqnpv");
 		</script>
-    </head>
-    <body>
-        <div>
-            <h1 class="intro">Cassava Cake</h1>
-			<h2 class="light-font text-2xl">With a luscious texture that exceeds Cassava Pone</h2>
-			<h3 class="light-font">Author: <a href="https://www.instagram.com/surenz2">@surenz2</a></h3>
+	</head>
+	<body>
+		<div>
+			<h1 class="intro" id="recipe-title">Cassava Cake</h1>
+			<h2 class="text-2xl mb-0">With a luscious texture that exceeds Cassava Pone</h2>
+			<h2 class="text-2xl mb-5">Author: <a href="https://www.instagram.com/surenz2">@surenz2</a></h2>
 			<figure class="recipe-figure">
-			<img class="recipe-pic" src="./docs/assets/img/cassavacake.jpg">
+				<img class="recipe-pic" src="./docs/assets/img/cassavacake.jpg" />
 			</figure>
-        </div>
-		<br>
+		</div>
+		<br />
 		<div class="recipe-card">
 			<div class="recipe-title">
-			  <h1>Cassava Cake</h1>
+				<h1>Cassava Cake</h1>
 			</div>
 			<div class="recipe-info">
-			  <div class="time">
-				<p><strong>Prep</strong><br>30 mins</p>
-			  </div>
-			  <div class="time">
-				<p><strong>Cook</strong><br>30-45 mins</p>
-			  </div>
-			  <div class="time">
-				<p><strong>Cooling Time</strong><br>30 mins</p>
-			  </div>
-			  <div class="time">
-				<p><strong>Total</strong><br>1 hrs 45 mins</p>
-			  </div>
+				<div class="time">
+					<p><strong>Prep</strong><br />30 mins</p>
+				</div>
+				<div class="time">
+					<p><strong>Cook</strong><br />30-45 mins</p>
+				</div>
+				<div class="time">
+					<p><strong>Cooling Time</strong><br />30 mins</p>
+				</div>
+				<div class="time">
+					<p><strong>Total</strong><br />1 hrs 45 mins</p>
+				</div>
 			</div>
-		
+			<div class="utilities pt-5">
+				<button
+					type="button"
+					class="copy-recipe px-3 py-2 text-md font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+					<svg
+						class="w-6 h-6 text-gray-800 dark:text-white"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="white"
+						viewBox="0 0 24 24">
+						<path
+							fill-rule="evenodd"
+							d="M7 9v6a4 4 0 0 0 4 4h4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1v2Z"
+							clip-rule="evenodd" />
+						<path
+							fill-rule="evenodd"
+							d="M13 3.054V7H9.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 13 3.054ZM15 3v4a2 2 0 0 1-2 2H9v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-3Z"
+							clip-rule="evenodd" />
+					</svg>
+					Copy
+				</button>
+				<button
+					type="button"
+					class="print-recipe px-3 py-2 text-md font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+					<svg
+						class="w-6 h-6 text-gray-800 dark:text-white"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="white"
+						viewBox="0 0 24 24">
+						<path
+							fill-rule="evenodd"
+							d="M8 3a2 2 0 0 0-2 2v3h12V5a2 2 0 0 0-2-2H8Zm-3 7a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h1v-4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4h1a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2H5Zm4 11a1 1 0 0 1-1-1v-4h8v4a1 1 0 0 1-1 1H9Z"
+							clip-rule="evenodd" />
+					</svg>
+					Print
+				</button>
+			</div>
+		</div>
+		<!-- Hidden success alert -->
+		<div
+			id="alert-border-3"
+			class="copy-success-alert hidden flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800 mt-5"
+			role="alert">
+			<svg
+				class="flex-shrink-0 w-4 h-4"
+				aria-hidden="true"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="currentColor"
+				viewBox="0 0 20 20">
+				<path
+					d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 1 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+			</svg>
+			<div class="ms-3 text-md font-medium"></div>
+			<button
+				id="triggerElement"
+				type="button"
+				class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700"
+				aria-label="Close">
+				<span class="sr-only">Dismiss</span>
+				<svg
+					class="w-3 h-3"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 14 14">
+					<path
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+				</svg>
+			</button>
 		</div>
 
-		  <div class="equipment-section">
-			<h2 class="text-2xl font-bold pt-5">Equipment</h2>
-			<ul class="equipment-list">
-				<li>
-					<input type="checkbox" id="cake-pan">
-					<label for="cake-pan">13x9 inch baking pan</label>
-                </li>
-                <li>
-					<input type="checkbox" id="skillet">
-					<label for="skillet">Large fine mesh strainer, such <a href="https://www.amazon.com/dp/B00004OCLX?_encoding=UTF8&psc=1">as this</a></label>
-				</li>
-				<li>
-					<input type="checkbox" id="blender">
-					<label for="blender">Large mixing bowl</label>
-				</li>
-				<li>
-					<input type="checkbox" id="spatula">
-					<label for="spatula">Whisk (or hand mixer)</label>
-				</li>
-			</ul>
+		<div class="pt-3">
+			<label class="inline-flex items-center cursor-pointer ml-0">
+				<input type="checkbox" value="" class="cook-mode sr-only peer" />
+				<div
+					class="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
+				<span class="ms-1 text-lg font-medium text-gray-900 dark:text-gray-300">Cook Mode </span
+				><span class="ms-1 text-sm font-light text-gray-900 dark:text-gray-300"> (keep screen awake)</span>
+			</label>
 		</div>
 
-		<div class="ingredients-section">
-			<h2 class="text-2xl font-bold">Ingredients</h2>
-			<ul class="ingredients-list">
-				<li>
-					<input type="checkbox" id="cassava">
-					<label for="cassava">900g (2 pounds/packs) <a href="docs/assets/img/gratedyuca.jpg">frozen grated cassava</a> (thawed and strained)</label>
-				</li>
-				<li>
-					<input type="checkbox" id="butter">
-					<label for="butter">113g (1 stick) butter, melted</label>
-				</li>
-				<li>
-					<input type="checkbox" id="sugar">
-					<label for="sugar">40g granulated sugar (about 3 tablespoons)</label>
-				</li>
-				<li>
-					<input type="checkbox" id="evap-milk">
-					<label for="evap-milk">1 can Evaporated Milk (12 fl oz, 354ml)</label>
-				</li>
-				<li>
-					<input type="checkbox" id="condensed-milk">
-					<label for="condensed-milk">1 can Condensed Milk (13.4 fl oz, 395g)</label>
-				</li>
-				<li>
-					<input type="checkbox" id="coconut-milk">
-					<label for="coconut-milk">1 can unsweetened coconut milk (400 mL)</label>
-				</li>
-				<li>
-					<input type="checkbox" id="eggs">
-					<label for="eggs">3 large eggs (~50g each), from fridge</label>
-				</li>
-			</ul>
-		</div>
+		<div id="text-content">
+			<div class="equipment-section">
+				<h2 class="text-2xl font-bold pt-5">Equipment</h2>
+				<ul class="equipment-list">
+					<li>
+						<input type="checkbox" id="cake-pan" />
+						<label for="cake-pan">13x9 inch baking pan</label>
+					</li>
+					<li>
+						<input type="checkbox" id="skillet" />
+						<label for="skillet"
+							>Large fine mesh strainer, such
+							<a href="https://www.amazon.com/dp/B00004OCLX?_encoding=UTF8&psc=1">as this</a></label
+						>
+					</li>
+					<li>
+						<input type="checkbox" id="blender" />
+						<label for="blender">Large mixing bowl</label>
+					</li>
+					<li>
+						<input type="checkbox" id="spatula" />
+						<label for="spatula">Whisk (or hand mixer)</label>
+					</li>
+				</ul>
+			</div>
 
-		<div class="directions-section">
-			<h2 class="text-2xl font-bold"> Directions</h2>
-			<ol class="directions list-decimal list-inside p-0">
-				<li>Thaw the grated cassava in the fridge or on the counter.</li>
-				<li>Preheat your oven to 325°F (160°C). </li>
-				<li>Melt the butter in the microwave. </li>
-				<li>Strain the grated cassava thoroughly and place it into a large mixing bowl.</li>
-				<li>Add the eggs, melted butter, evaporated milk, condensed milk, coconut milk, and sugar to the bowl with the cassava. Mix all the ingredients together for 2-3 minutes until well combined.</li>
-				<li>Taste for sweetness and add more  sugar as needed.</li>
-				<li>Grease a 13x9 inch (33x23 cm) baking pan with butter to prevent sticking. Pour the mixture evenly into the prepared pan.</li>
-				<li>Bake the cassava mixture for approximately 30 minutes, then begin checking every 5 minutes. The cake is done when it is golden brown and set in the center. Let cool to room temperature.</li>
-			</ol>
-		</div>
+			<div class="ingredients-section">
+				<h2 class="text-2xl font-bold">Ingredients</h2>
+				<ul class="ingredients-list">
+					<li>
+						<input type="checkbox" id="cassava" />
+						<label for="cassava"
+							>900g (2 pounds/packs)
+							<a href="docs/assets/img/gratedyuca.jpg">frozen grated cassava</a> (thawed and
+							strained)</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" id="butter" />
+						<label for="butter">113g (1 stick) butter, melted</label>
+					</li>
+					<li>
+						<input type="checkbox" id="sugar" />
+						<label for="sugar">40g granulated sugar (about 3 tablespoons)</label>
+					</li>
+					<li>
+						<input type="checkbox" id="evap-milk" />
+						<label for="evap-milk">1 can Evaporated Milk (12 fl oz, 354ml)</label>
+					</li>
+					<li>
+						<input type="checkbox" id="condensed-milk" />
+						<label for="condensed-milk">1 can Condensed Milk (13.4 fl oz, 395g)</label>
+					</li>
+					<li>
+						<input type="checkbox" id="coconut-milk" />
+						<label for="coconut-milk">1 can unsweetened coconut milk (400 mL)</label>
+					</li>
+					<li>
+						<input type="checkbox" id="eggs" />
+						<label for="eggs">3 large eggs (~50g each), from fridge</label>
+					</li>
+				</ul>
+			</div>
 
-		<div class="etc-section">
-			<h2 class="text-2xl font-bold">Nutrition facts</h2>
-			<p>I have absolutely no idea! Please feel free to hit me up if you calculate this 😆</p>
+			<div class="directions-section">
+				<h2 class="text-2xl font-bold">Directions</h2>
+				<ol class="directions list-decimal list-inside p-0">
+					<li>Thaw the grated cassava in the fridge or on the counter.</li>
+					<li>Preheat your oven to 325°F (160°C).</li>
+					<li>Melt the butter in the microwave.</li>
+					<li>Strain the grated cassava thoroughly and place it into a large mixing bowl.</li>
+					<li>
+						Add the eggs, melted butter, evaporated milk, condensed milk, coconut milk, and sugar to the
+						bowl with the cassava. Mix all the ingredients together for 2-3 minutes until well combined.
+					</li>
+					<li>Taste for sweetness and add more sugar as needed.</li>
+					<li>
+						Grease a 13x9 inch (33x23 cm) baking pan with butter to prevent sticking. Pour the mixture
+						evenly into the prepared pan.
+					</li>
+					<li>
+						Bake the cassava mixture for approximately 30 minutes, then begin checking every 5 minutes. The
+						cake is done when it is golden brown and set in the center. Let cool to room temperature.
+					</li>
+				</ol>
+			</div>
 
-			<h2 class="text-2xl font-bold pt-5">Notes</h2>
-			<p>• Credits to my cousin’s fiancee Kim whom <a href="docs/assets/img/kimsrecipe.jpeg">I adapted the recipe from.</a></p>
-			<p>• I highly prefer it warm, but you can serve it chilled.</p>
-			<p>• You can source the grated cassava from most stores. Asian stores and hispanic stores will typically have.</p>
-			
-			<br>
+			<div class="etc-section">
+				<h2 class="text-2xl font-bold">Nutrition facts</h2>
+				<p>I have absolutely no idea! Please feel free to hit me up if you calculate this 😆</p>
+				<h2 class="text-2xl font-bold pt-5">Notes</h2>
+				<p>
+					• Credits to my cousin’s fiancee Kim whom
+					<a href="docs/assets/img/kimsrecipe.jpeg">I adapted the recipe from.</a>
+				</p>
+				<p>• I highly prefer it warm, but you can serve it chilled.</p>
+				<p>
+					• You can source the grated cassava from most stores. Asian stores and hispanic stores will
+					typically have.
+				</p>
+
+				<br />
+			</div>
 		</div>
 		<script src="./docs/assets/cdn/flowbite.min.js"></script>
-        </body>
-    </html>
+	</body>
+</html>

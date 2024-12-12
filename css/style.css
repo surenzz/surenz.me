@@ -367,3 +367,17 @@ input[type="checkbox"]:checked + label {
 .ingredients-list {
     margin-bottom: 50px;
 }
+
+/* Alert is visible by default */
+#alert-border-3 {
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade-out state */
+#alert-border-3.fade-out {
+  opacity: 0; /* Make it transparent */
+  transform: translateY(-20px); /* Slight upward motion */
+  pointer-events: none; /* Prevent interaction during fade-out */
+}
