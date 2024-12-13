@@ -12,23 +12,19 @@ html,
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 30%;
+    margin-right: 30%;
     padding-top: 3%;
     color: #212121;
 }
 
+body {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
 p {
     font-size: 115%;
-}
-
-.dm-me {
-    margin-bottom: 0;
-}
-
-.small-p {
-    margin-top: 1%;
-    font-size: 96%;
 }
 
 .light-font {
@@ -39,49 +35,38 @@ p {
 
 .intro {
     font-family: "Lato", sans-serif, normal;
-    /* Adjusted */
-    margin: 0;
-    padding-bottom: 0.5%;
     font-weight: 700;
+    font-size: 2rem; /* Mobile-sized font */
+    text-align: center; /* Center the text */
+    margin: auto;
+    padding-bottom: 1%;
 }
+
+.container{
+    text-align: center
+}
+
 
 #name {
     color: #046C4E;
 }
 
-.column-left {
-    float: left;
-    width: 68%;
-    margin-top: 0.5%;
-    margin-right: 2%;
-    font-size: 1.25rem;
-}
-
-.column-right {
-    margin-top: 0.5%;
-    float: left;
-    width: 28%;
-    margin-left: 2%;
-}
-
-/* Ensuring Circular Profile Picture */
 .profile-pic {
-    border-radius: 50%;
-    /* Circular shape */
-    width: 250px;
-    /* Adjusted size for desktop */
-    height: 250px;
-    /* Ensures circular shape */
+    padding-bottom: 2%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    /* Ensures image fills the circle properly */
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
 }
 
 .recipe-pic {
-    width: 500px;
-    /* Adjusted size for desktop */
-    object-fit: cover;
-    /* Ensures image fills the circle properly */
+    max-width: 90%;
+    height: auto;
+    margin: 1rem 0;
 }
+
 
 .recipe-figure {
     margin-left: 0;
@@ -100,122 +85,75 @@ a:hover {
     /* Hover effect color */
 }
 
-/* Add Responsive Mobile Styles */
-@media (max-width: 768px) {
-    body {
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-
- 
-    video {
-        width: 100%;
-    }
-
-    .column-left,
-    .column-right {
+.column-left,
+.column-right {
         width: 100%;
         float: none;
         text-align: center;
         /* Center the text and image for better readability */
-    }
-
-    .column-right {
-        display: flex;
-        justify-content: center; /* Centers horizontally */
-        align-items: center; /* Centers vertically */
-        flex-direction: column; /* Ensures content stacks properly */
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        order: -1;
-    }
-
-    .profile-pic {
-        width: 175px;
-        height: 175px;
-        border-radius: 50%; /* Makes the image circular */
-        object-fit: cover; /* Ensures the image fits within the circle */
-    }
-
-    .intro-name {
-        font-size: 3.5rem;
-        /* Reduce heading size for mobile */
-        text-align: center;
-        /* Center the @surenz2 on mobile */
-    }
-    
-    .intro {
-    font-size: 3.5rem;
-    /* Reduce heading size for mobile */
-    }
-
-    .small-p {
-        font-size: 1rem;
-    }
-
-    /* Ensures recipe images are responsive and fill the available space */
-    .recipe-pic {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .recipe-image-section,
-    .recipe-card,
-    .copy-success-alert{
-        margin-right: 0;
-        max-width: 100%;
-    }
 }
 
-/* Desktop View Improvements */
-@media (min-width: 1024px) {
-    body {
-        margin-left: 12%;
-        /* Increase margins for larger screens */
-        margin-right: 12%;
-    }
+video {
+    width: 100%;
+}
 
-    .intro {
-        font-size: 4rem;
-        /* Slightly reduced header size */
-    }
+.column-left,
+.column-right {
+    width: 100%;
+    float: none;
+    text-align: center;
+    /* Center the text and image for better readability */
+}
 
-    .column-left {
-        width: 50%;
-        /* Balanced text-image column width */
-        margin-right: 4%;
-    }
+.column-right {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Ensures content stacks properly */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    order: -1;
+}
 
-    .column-right {
-        width: 40%;
-        /* Slightly smaller image column */
-        text-align: right;
-        /* Align the image to the right */
-    }
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
+}
 
-    .profile-pic {
-        width: 325px;
-        /* Adjusted image size for desktop */
-        height: 325px;
-        /* Ensures circular shape on desktop */
-    }
+.intro-name {
+    font-size: 3.5rem;
+    /* Reduce heading size for mobile */
+    text-align: center;
+    /* Center the @surenz2 on mobile */
+}
 
-    video {
-        width: 40%;
-    }
+.intro {
+font-size: 3.5rem;
+/* Reduce heading size for mobile */
+}
+
+.small-p {
+    font-size: 1rem;
+}
+
+/* Ensures recipe images are responsive and fill the available space */
+.recipe-pic {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    /* Allows elements to wrap if screen is too small */
+    flex-direction: column;
+}
+
+.recipe-image-section,
+.recipe-card,
+.copy-success-alert{
+    margin-right: 0;
+    max-width: 100%;
 }
 
 .recipe-image-section {
@@ -383,4 +321,23 @@ input[type="checkbox"]:checked + label {
   opacity: 0; /* Make it transparent */
   transform: translateY(-20px); /* Slight upward motion */
   pointer-events: none; /* Prevent interaction during fade-out */
+}
+
+@media (min-width: 1024px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+    
+    p {
+    font-size: 130%;
+    }
+
+    .intro {
+        font-size: 4.5rem;
+    }
+
+    .recipe-card {
+        max-width: 700px;
+    }
 }
