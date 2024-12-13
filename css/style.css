@@ -41,7 +41,6 @@ p {
     font-family: "Lato", sans-serif, normal;
     /* Adjusted */
     margin: 0;
-    padding-bottom: 0.5%;
     font-weight: 700;
 }
 
@@ -170,6 +169,29 @@ a:hover {
         margin-right: 0;
         max-width: 100%;
     }
+    
+    .recipe-card {
+        flex-direction: row; /* Change layout to horizontal */
+        align-items: center; /* Align items vertically in row layout */
+        padding: 10px;
+    }
+
+    .recipe-title, .utilities {
+        flex: 1 1 100%; /* Full width for title */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .recipe-info {
+        flex: 1 1 auto; /* Distribute remaining space to info */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .recipe-info .time {
+        flex: 1 1 25%; /* Fit 4 items evenly in one row */
+    }
 }
 
 /* Desktop View Improvements */
@@ -210,6 +232,10 @@ a:hover {
     }
 }
 
+.recipe-intro{
+    padding-bottom: 20px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -218,24 +244,34 @@ a:hover {
     /* Allows elements to wrap if screen is too small */
 }
 
+.cook-mode-container{
+    padding-top: 20px;
+}
+
+.utilities {
+    padding-top: 20px;
+}
+
 .recipe-image-section {
     flex: 1;
     margin-right: 20px;
 }
 
 .recipe-pic {
-    max-width: 100%;
     height: auto;
-    border-radius: 2px;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card {
     flex: 1;
     background-color: white;
     border: 2px solid #046C4E;
-    border-radius: 2px;
     padding: 20px;
-    max-width: 600px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .copy-success-alert {
@@ -259,7 +295,6 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     color: #333;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -269,6 +304,10 @@ a:hover {
     padding: 15px 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
+}
+
+.no-idea {
+    font-size: 125%;
 }
 
 .time {
@@ -329,6 +368,12 @@ li label {
     font-size: 125%;
 }
 
+.notes-ul {
+    font-size: 125%;
+    padding-left: 18px;
+    list-style-type: disclosure-closed;
+}
+
 label {
     font-size: 16px;
     color: #333;
@@ -363,12 +408,25 @@ input[type="checkbox"]:checked + label {
     font-family: "Roboto", sans-serif;
 }
 
-.equipment-list {
-    margin-bottom: 30px;
+.equipment-section {
+    padding-top: 20px;
 }
 
 .ingredients-list {
-    margin-bottom: 50px;
+    padding-top:20px;
+}
+
+.directions-section {
+    padding-top: 20px;
+}
+
+.etc-section{
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.notes-section {
+    padding-top: 20px;
 }
 
 /* Alert is visible by default */
