@@ -46,7 +46,7 @@ p {
 }
 
 #name {
-    color: #26c646;
+    color: #046C4E;
 }
 
 .column-left {
@@ -232,7 +232,7 @@ a:hover {
 .recipe-card {
     flex: 1;
     background-color: white;
-    border: 2px solid #26c646;
+    border: 2px solid #046C4E;
     border-radius: 2px;
     padding: 20px;
     max-width: 600px;
@@ -243,7 +243,7 @@ a:hover {
 }
 
 .recipe-header {
-    background-color: #26c646;
+    background-color: #046C4E;
     padding: 10px;
     border-radius: 6px 6px 0 0;
     text-align: center;
