@@ -384,3 +384,7 @@ input[type="checkbox"]:checked + label {
   transform: translateY(-20px); /* Slight upward motion */
   pointer-events: none; /* Prevent interaction during fade-out */
 }
+
+ol > li::marker {
+  font-weight: bold;
+}
