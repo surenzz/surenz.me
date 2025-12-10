@@ -398,6 +398,74 @@ input[type="checkbox"]:checked + label {
     /* You can change this color for a faded look when crossed out */
 }
 
+/* View Image toggle styles */
+.view-image-wrap {
+    display: block;
+    margin-top: 0.05rem;
+    margin-bottom: 0;
+}
+.view-image-details {
+    display: inline-block;
+    font-size: 0.95rem;
+}
+.view-image-details summary {
+    list-style: none;
+    cursor: pointer;
+    color: #15803d;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.15s ease;
+}
+.view-image-details summary:hover {
+    color: #166534;
+}
+.view-image-details summary::-webkit-details-marker {
+    display: none;
+}
+.view-image-caret {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.view-image-details[open] .view-image-caret {
+    transform: rotate(90deg);
+}
+.view-image-container {
+    margin-top: 0.3rem;
+}
+.view-image-container .recipe-pic {
+    max-width: 320px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+.view-image-controls {
+    margin: 0.2rem 0 0.75rem 0;
+}
+.view-image-toggle-all {
+    border: none;
+    font-weight: 400;
+    padding: 0.35rem 0.85rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    line-height: 1.2;
+    transition: transform 0.1s ease;
+}
+.view-image-toggle-all:active {
+    transform: translateY(1px);
+}
+.view-image-toggle-all-label {
+    font-weight: 400;
+}
+.view-image-icon {
+    display: inline-flex;
+}
+
 [type="checkbox"]:checked,
 [type="radio"]:checked {
     background-color: #046c4e;

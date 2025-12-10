@@ -131,6 +131,46 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+      // Handle "show all images" toggler for step images
+      const viewImageDetails = Array.from(document.querySelectorAll('.view-image-details'));
+      const toggleAllImagesBtn = document.querySelector('.view-image-toggle-all');
+      const toggleAllImagesLabel = document.querySelector('.view-image-toggle-all-label');
+      const toggleAllShowIcon = document.querySelector('.view-image-icon-show');
+      const toggleAllHideIcon = document.querySelector('.view-image-icon-hide');
+
+      function updateToggleAllLabel(openState) {
+        if (toggleAllImagesLabel) {
+          toggleAllImagesLabel.textContent = openState ? 'Hide images' : 'View images';
+        }
+        if (toggleAllShowIcon && toggleAllHideIcon) {
+          if (openState) {
+            toggleAllShowIcon.style.display = 'none';
+            toggleAllHideIcon.style.display = 'inline-flex';
+          } else {
+            toggleAllShowIcon.style.display = 'inline-flex';
+            toggleAllHideIcon.style.display = 'none';
+          }
+        }
+      }
+
+      if (toggleAllImagesBtn && viewImageDetails.length) {
+        // Set initial button label based on whether any details are open
+        const anyOpen = viewImageDetails.some(detail => detail.hasAttribute('open'));
+        updateToggleAllLabel(anyOpen);
+
+        toggleAllImagesBtn.addEventListener('click', () => {
+          const shouldOpen = !viewImageDetails.every(detail => detail.hasAttribute('open'));
+          viewImageDetails.forEach(detail => {
+            if (shouldOpen) {
+              detail.setAttribute('open', '');
+            } else {
+              detail.removeAttribute('open');
+            }
+          });
+          updateToggleAllLabel(shouldOpen);
+        });
+      }
 });
 
 function showSuccessAlert(alertContainer, message, isError = false) {
