@@ -247,6 +247,39 @@
 
 			<div class="directions-section">
 				<h2 class="text-2xl font-bold">Directions</h2>
+				<div class="view-image-controls">
+					<button
+						type="button"
+						class="view-image-toggle-all px-3 py-2 text-md font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+						<span class="view-image-icon view-image-icon-show" aria-hidden="true" style="display:none;">
+							<svg
+								class="w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2">
+								<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z" />
+								<circle cx="12" cy="12" r="3" />
+							</svg>
+						</span>
+						<span class="view-image-icon view-image-icon-hide" aria-hidden="true">
+							<svg
+								class="w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2">
+								<path d="M3 3l18 18" />
+								<path d="M10.58 10.58a3 3 0 0 0 4.24 4.24" />
+								<path d="M9.88 4.12A10.66 10.66 0 0 1 12 4c7 0 11 8 11 8a15.66 15.66 0 0 1-3.12 4.45" />
+								<path d="M6.21 6.21C3.5 7.82 1 12 1 12a15.41 15.41 0 0 0 6.91 6.11" />
+							</svg>
+						</span>
+						<span class="view-image-toggle-all-label">Hide images</span>
+					</button>
+				</div>
 				<ol class="directions list-decimal list-inside p-0">
 					<li>Thaw the grated cassava in the fridge or on the counter.</li>
 					<li>Preheat your oven to 325°F (160°C).</li>
@@ -256,10 +289,10 @@
 						Add the eggs, melted butter, evaporated milk, condensed milk, coconut milk, and sugar to the
 						bowl with the cassava. Mix all the ingredients together for 2-3 minutes until well combined.
 						<div class="view-image-wrap text-md">
-							<details class="view-image-details">
+							<details class="view-image-details" open>
 								<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 								<div class="view-image-container">
-									<img src="./docs/assets/img/gratedyuca.jpg" alt="Grated cassava ready to mix with wet ingredients" class="recipe-pic" />
+									<img src="./docs/assets/img/cassavacake/mixing_cassava.webp" alt="Grated cassava ready to mix with wet ingredients" class="recipe-pic" />
 								</div>
 							</details>
 						</div>
@@ -269,7 +302,7 @@
 						Grease a 13x9 inch (33x23 cm) baking pan with butter to prevent sticking. Pour the mixture
 						evenly into the prepared pan.
 						<div class="view-image-wrap text-md">
-							<details class="view-image-details">
+							<details class="view-image-details" open>
 								<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 								<div class="view-image-container">
 									<img src="./docs/assets/img/cassavacake/cassava_before_bake.jpg" alt="Cassava cake after baking" class="recipe-pic" />
@@ -281,7 +314,7 @@
 						Bake the cassava mixture for approximately 30 minutes, then begin checking every 5 minutes. The
 						cake is done when it is golden brown and set in the center. Let cool to room temperature.
 						<div class="view-image-wrap text-md">
-							<details class="view-image-details">
+							<details class="view-image-details" open>
 								<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 								<div class="view-image-container">
 									<img src="./docs/assets/img/cassavacake/cassava_after_bake.jpg" alt="Cassava cake baked until golden brown" class="recipe-pic" />
@@ -291,10 +324,10 @@
 					</li>
 					<li> [Optional] If using my <a href="http://surenz.me/guavacurd" target="_blank">Guava Curd</a> recipe, now is the time to make it. Once cooled, place it in a piping bag and do a diagonal design across each piece. Top with coconut flakes.
 						<div class="view-image-wrap text-md">
-							<details class="view-image-details">
+							<details class="view-image-details" open>
 								<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 								<div class="view-image-container">
-									<img src="./docs/assets/img/guavacurd.webp" alt="Guava curd ready for piping over cassava cake" class="recipe-pic" />
+									<img src="./docs/assets/img/cassavacake/piping_guava_curd.webp" alt="Guava curd ready for piping over cassava cake" class="recipe-pic" />
 								</div>
 							</details>
 						</div>
@@ -308,6 +341,7 @@
 				<div class="notes-section">
 				<h2 class="text-2xl font-bold">Notes</h2>
 				<ul class="notes-ul">
+					<li>Suggested preparation order: Cassava Cake → <a href="http://surenz.me/guavacurd" target="_blank">Guava Curd</a></li>
 					<li>
 						Credits to my cousin’s fiancee Kim whom
 						<a href="docs/assets/img/kimsrecipe.jpeg" target="_blank">I adapted the recipe from.</a>

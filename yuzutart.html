@@ -245,6 +245,39 @@
 
 			<div class="directions-section">
 				<h2 class="text-2xl font-bold">Directions</h2>
+				<div class="view-image-controls">
+					<button
+						type="button"
+						class="view-image-toggle-all px-3 py-2 text-md font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+						<span class="view-image-icon view-image-icon-show" aria-hidden="true" style="display:none;">
+							<svg
+								class="w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2">
+								<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z" />
+								<circle cx="12" cy="12" r="3" />
+							</svg>
+						</span>
+						<span class="view-image-icon view-image-icon-hide" aria-hidden="true">
+							<svg
+								class="w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2">
+								<path d="M3 3l18 18" />
+								<path d="M10.58 10.58a3 3 0 0 0 4.24 4.24" />
+								<path d="M9.88 4.12A10.66 10.66 0 0 1 12 4c7 0 11 8 11 8a15.66 15.66 0 0 1-3.12 4.45" />
+								<path d="M6.21 6.21C3.5 7.82 1 12 1 12a15.41 15.41 0 0 0 6.91 6.11" />
+							</svg>
+						</span>
+						<span class="view-image-toggle-all-label">Hide images</span>
+					</button>
+				</div>
 				<ol class="directions list-decimal list-inside p-0">
 					<li>Sift the sugar and juice the lemons.</li>
 					<li>
@@ -258,6 +291,14 @@
 					</li>
 					<li>
 						Cook on medium heat, whisking constantly, until the mixture becomes thick. About 10-15 minutes. It should coat the back of a wooden spoon and leave a clear pass if you run a finger through it. If using a thermometer, it should register 170F (75C).
+						<div class="view-image-wrap text-md">
+							<details class="view-image-details" open>
+								<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
+								<div class="view-image-container">
+									<img src="./docs/assets/img/yuzutart/yuzu_curd.webp" alt="Cooking curd over a double boiler until thickened" class="recipe-pic" />
+								</div>
+							</details>
+						</div>
 					</li>
 					<li>
 						Remove from heat and cut the butter from the fridge into 1 inch cubes. Add the cold butter 1 block at a time, whisking so it dissolves. Take your time doing this, the whisking makes an airy/light texture.
@@ -284,12 +325,12 @@
 				<div class="notes-section">
 				<h2 class="text-2xl font-bold">Notes</h2>
 				<ul class="notes-ul">
+					<li>Suggested preparation order: <a href="http://surenz.me/sweetpastry" target="_blank">Sweet pastry</a> → Yuzu Cream → <a href="http://surenz.me/meringue" target="_blank">Meringue</a>.</li>
+					<li>The tart will keep well in the fridge for a few days.</li>
 					<li>
 						Adapted and updated from
 						<a href="https://lilyvanilli.com/recipes/yuzu-lemon-tart-black-sesame-meringue/" target="_blank">this recipe</a>.
 					</li>
-					<li>The tart will keep well in the fridge for a few days.</li>
-					<li>Suggested preparation order: Sweet pastry → Yuzu Cream → Meringue.</li>
 				</ul>
 				</div>
 			</div>

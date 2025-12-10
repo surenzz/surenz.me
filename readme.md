@@ -1,7 +1,6 @@
 # TODO
 
 - add matcha cupcake, strawberry compote, and matcha frosting
-- add hyperlnks to the respective suggested preperation order for yuzu tart, cassava cake, and pepper pine tart
 - add dates for when recipes were created
     - besame march 11 2022
     - cassava w guava curd dec 20 2024 
