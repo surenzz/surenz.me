@@ -270,7 +270,7 @@ a:hover {
     background-color: white;
     border: 2px solid #046C4E;
     padding: 20px;
-    max-width: 500px;
+    max-width: 640px;
     text-align: center;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -509,11 +509,12 @@ input[type="checkbox"]:checked + label {
     font-family: "Roboto", sans-serif;
 }
 
+.equipment-list {
+    padding-top: 8px;
+}
+
 .equipment-section {
     padding-top: 20px;
-}
-.equipment-group {
-    padding-top: 8px;
 }
 
 .ingredients-list {
@@ -522,6 +523,10 @@ input[type="checkbox"]:checked + label {
 
 .directions-section {
     padding-top: 12px;
+}
+
+.directions {
+    padding-top: 8px;
 }
 
 .etc-section{
