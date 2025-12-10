@@ -171,6 +171,17 @@ document.addEventListener("DOMContentLoaded", function () {
           updateToggleAllLabel(shouldOpen);
         });
       }
+
+      // Prevent modal trigger links inside labels from toggling their checkboxes
+      const modalLinks = document.querySelectorAll('.modal-link');
+      modalLinks.forEach(link => {
+        ['click', 'mousedown', 'pointerdown', 'mouseup'].forEach(evt => {
+          link.addEventListener(evt, e => {
+            e.preventDefault();
+            e.stopPropagation();
+          });
+        });
+      });
 });
 
 function showSuccessAlert(alertContainer, message, isError = false) {
