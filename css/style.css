@@ -443,7 +443,8 @@ input[type="checkbox"]:checked + label {
     box-shadow: 0 4px 6px rgba(0,0,0,0.08);
 }
 .view-image-controls {
-    margin: 0.2rem 0 0.75rem 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .view-image-toggle-all {
     border: none;
