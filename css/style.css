@@ -42,6 +42,7 @@ p {
     /* Adjusted */
     margin: 0;
     font-weight: 700;
+    font-size: clamp(2.5rem, 3vw + 1.25rem, 4rem);
 }
 
 #name {
@@ -76,14 +77,14 @@ p {
 }
 
 .recipe-pic {
-    width: 500px;
-    /* Adjusted size for desktop */
+    width: 100%;
+    max-width: 640px;
+    height: auto;
     object-fit: cover;
-    /* Ensures image fills the circle properly */
 }
 
 .recipe-figure {
-    margin-left: 0;
+    margin: 0;
 }
 
 /* Style for Links */
@@ -203,7 +204,7 @@ a:hover {
     }
 
     .intro {
-        font-size: 4rem;
+        font-size: clamp(2.5rem, 3vw + 1.25rem, 4rem);
         /* Slightly reduced header size */
     }
 
@@ -466,6 +467,37 @@ input[type="checkbox"]:checked + label {
     display: inline-flex;
 }
 
+/* Hero media (image/video above the recipe card) */
+.hero-media {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0 16px 0;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-media figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.hero-media video,
+.hero-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hero-media-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 [type="checkbox"]:checked,
 [type="radio"]:checked {
     background-color: #046c4e;
@@ -479,13 +511,16 @@ input[type="checkbox"]:checked + label {
 .equipment-section {
     padding-top: 20px;
 }
+.equipment-group {
+    padding-top: 8px;
+}
 
 .ingredients-list {
-    padding-top:20px;
+    padding-top: 8px;
 }
 
 .directions-section {
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .etc-section{
@@ -516,5 +551,11 @@ ol > li::marker {
 }
 
 .ingredient-groups {
-    padding-top: 2%;
+    padding-top: 0.5rem;
+}
+.ingredient-group + .ingredient-group {
+    margin-top: 0.2rem;
+}
+.ingredient-group h3 {
+    margin-bottom: 0.1rem;
 }
