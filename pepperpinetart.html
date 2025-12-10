@@ -250,6 +250,39 @@
 
 			<div class="directions-section">
 				<h2 class="text-2xl font-bold">Directions</h2>
+				<div class="view-image-controls">
+					<button
+					type="button"
+					class="view-image-toggle-all px-3 py-2 text-md font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+					<span class="view-image-icon view-image-icon-show" aria-hidden="true">
+						<svg
+							class="w-6 h-6"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2">
+							<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z" />
+							<circle cx="12" cy="12" r="3" />
+						</svg>
+					</span>
+					<span class="view-image-icon view-image-icon-hide" aria-hidden="true" style="display:none;">
+						<svg
+							class="w-6 h-6"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2">
+							<path d="M3 3l18 18" />
+							<path d="M10.58 10.58a3 3 0 0 0 4.24 4.24" />
+							<path d="M9.88 4.12A10.66 10.66 0 0 1 12 4c7 0 11 8 11 8a15.66 15.66 0 0 1-3.12 4.45" />
+							<path d="M6.21 6.21C3.5 7.82 1 12 1 12a15.41 15.41 0 0 0 6.91 6.11" />
+						</svg>
+					</span>
+					<span class="view-image-toggle-all-label">View images</span>
+				</button>
+				</div>
 				<div class="direction-groups">
 					<div class="direction-group">
 						<h3 class="text-xl font-semibold">Make the dough</h3>
@@ -268,7 +301,16 @@
 						<ol class="directions list-decimal list-inside p-0">
 							<li>Blend Pineapple chunks in blender with half of juice from the can.</li>
 							<li>On a saucepan over medium heat, mix blended pineapple, sugar, lemon juice and salt. </li>
-							<li>Cook pineapple for 25 minutes or until it has thickened.  Do not overcook.</li>
+							<li>Cook pineapple for 25 minutes or until it has thickened.  Do not overcook.
+								<div class="view-image-wrap text-md">
+									<details class="view-image-details">
+										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
+										<div class="view-image-container">
+											<img src="./docs/assets/img/pepperpinetart/pot.jpg" alt="Pineapple filling simmering" class="recipe-pic" />
+										</div>
+									</details>
+								</div>
+							</li>
 							<li>Remove from heat and cool completely before using.</li>
 						</ol>
 					</div>
@@ -280,10 +322,28 @@
 							<li>Mix 1 tablespoon pine filling, 1/2 tablespoon pepper jelly and mix. Taste to see if it’s your desired spice level. Mix enough to fill 6 pastries. In my case that’s 6 tablespoons pine filling and 3 tablespoons pepper jelly. Set aside.</li>
 							<li>Divide the pastry dough into two and place one half back into the plastic in the fridge.</li>
 							<li>Working with the remaining half, roll the dough out until it is 1/8th inch thick, then using a pot lid to cut about 3 circles. You will need to press the scraps together, roll out again and cut another 3. </li>
-							<li>Fill the center of each circle with this mixture.</li>
+							<li>Fill the center of each circle with this mixture.
+								<div class="view-image-wrap text-md">
+									<details class="view-image-details">
+										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
+										<div class="view-image-container">
+											<img src="./docs/assets/img/pepperpinetart/paste.jpg" alt="Filling the pastry circles" class="recipe-pic" />
+										</div>
+									</details>
+								</div>
+							</li>
 							<li>Using your finger, brush the edges with some cold water then fold over the edges to form a triangle.</li>
 							<li>Using a fork, crimp along the exposed edges.</li>
-							<li>Place on a baking sheet with parchment paper, then brush with the egg wash. </li>
+							<li>Place on a baking sheet with parchment paper, then brush with the egg wash.
+								<div class="view-image-wrap text-md">
+									<details class="view-image-details">
+										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
+										<div class="view-image-container">
+											<img src="./docs/assets/img/pepperpinetart/oven.jpg" alt="Pine tarts on baking sheet with egg wash" class="recipe-pic" />
+										</div>
+									</details>
+								</div>
+							</li>
 							<li>Repeat steps 2 to 4 with the remaining pastry dough.</li>
 							<li>Bake at 350°F for 20 to 25 mins, then remove from the oven and let cool on a wire rack.</li>
 						</ol>
