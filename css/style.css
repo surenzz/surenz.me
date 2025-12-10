@@ -81,6 +81,13 @@ p {
     max-width: 640px;
     height: auto;
     object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-vid {
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-figure {
@@ -256,12 +263,6 @@ a:hover {
 .recipe-image-section {
     flex: 1;
     margin-right: 20px;
-}
-
-.recipe-pic {
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card {
