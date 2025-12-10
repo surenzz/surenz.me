@@ -408,7 +408,7 @@ input[type="checkbox"]:checked + label {
 }
 .view-image-details {
     display: inline-block;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 .view-image-details summary {
     list-style: none;
