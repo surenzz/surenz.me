@@ -138,6 +138,19 @@ document.addEventListener("DOMContentLoaded", function () {
       const toggleAllImagesLabel = document.querySelector('.view-image-toggle-all-label');
       const toggleAllShowIcon = document.querySelector('.view-image-icon-show');
       const toggleAllHideIcon = document.querySelector('.view-image-icon-hide');
+      const viewImageSummaryLabel = (detailEl) => {
+        const summary = detailEl.querySelector('summary');
+        if (!summary) return null;
+        const spans = summary.querySelectorAll('span');
+        return spans.length > 1 ? spans[1] : null;
+      };
+
+      function updateDetailLabel(detailEl) {
+        const labelSpan = viewImageSummaryLabel(detailEl);
+        if (labelSpan) {
+          labelSpan.textContent = detailEl.hasAttribute('open') ? 'Hide' : 'Show';
+        }
+      }
 
       function updateToggleAllLabel(openState) {
         if (toggleAllImagesLabel) {
@@ -157,6 +170,10 @@ document.addEventListener("DOMContentLoaded", function () {
       if (toggleAllImagesBtn && viewImageDetails.length) {
         // Set initial button label based on whether any details are open
         const anyOpen = viewImageDetails.some(detail => detail.hasAttribute('open'));
+        viewImageDetails.forEach(detail => {
+          updateDetailLabel(detail);
+          detail.addEventListener('toggle', () => updateDetailLabel(detail));
+        });
         updateToggleAllLabel(anyOpen);
 
         toggleAllImagesBtn.addEventListener('click', () => {
@@ -167,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
               detail.removeAttribute('open');
             }
+            updateDetailLabel(detail);
           });
           updateToggleAllLabel(shouldOpen);
         });
