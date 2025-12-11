@@ -515,3 +515,7 @@ ol > li::marker {
     height: 100%;
     object-fit: cover;
 }
+
+.created{
+    font-weight: 600;
+}
