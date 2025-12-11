@@ -1,8 +1,12 @@
-console.log("main.js loaded");
+console.log("js loaded");
 
-//Tracking user info via IP API and sending to Cloudflare Worker
 fetch("https://ip-logging-surenz.surenxss.workers.dev", {
-  method: "POST"
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    page: window.location.href,
+    referrer: document.referrer || "direct"
+  })
 });
 
 
