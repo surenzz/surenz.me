@@ -7,7 +7,7 @@ fetch("https://ip-logging-surenz.surenxss.workers.dev", {
     page: window.location.href,
     referrer: document.referrer || "direct"
   })
-});
+}).catch(err => console.error("Logging error:", err));
 
 
 // Handles all recipe page interactions
