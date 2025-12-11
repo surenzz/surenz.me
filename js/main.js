@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isMobileDevice()) {
             link.setAttribute("href", "https://www.instagram.com/surenz2/");
-            //DM https://www.instagram.com/direct/t/115592643163322
-            //IG Page: https://www.instagram.com/surenz2/
         }
         console.log("Link changed to desktop version.");
     }
@@ -71,6 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const textContent = document.getElementById("text-content");
         printButton.addEventListener("click", () => {
             if (recipeTitle && textContent) {
+                // Clone the content and strip media/toggle controls so printing stays text-only
+                const cleanContent = textContent.cloneNode(true);
+                const elementsToRemove = cleanContent.querySelectorAll(".view-image-controls, .view-image-wrap, .view-image-details, img, video");
+                elementsToRemove.forEach((el) => el.remove());
+
                 // Create a new window for printing
                 const printWindow = window.open("", "_blank");
 
@@ -90,11 +93,21 @@ document.addEventListener("DOMContentLoaded", function () {
               h1, h2 {
                 text-align: center;
               }
+              .equipment-list,
+              .ingredients-list {
+                list-style: none;
+                padding-left: 0;
+                margin-left: 0;
+              }
+              .equipment-list li,
+              .ingredients-list li {
+                margin-left: 0;
+              }
             </style>
           </head>
           <body>
             <h1>${recipeTitle.innerText}</h1>
-            <div>${textContent.innerHTML}</div>
+            <div>${cleanContent.innerHTML}</div>
           </body>
           </html>
         `);

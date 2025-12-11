@@ -351,11 +351,6 @@ ul {
     padding-left: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
 li {
     align-items: center;
     margin-bottom: 15px;
@@ -510,14 +505,11 @@ input[type="checkbox"]:checked + label {
     font-family: "Roboto", sans-serif;
 }
 
-.equipment-list {
-    padding-top: 8px;
-}
-
 .equipment-section {
     padding-top: 20px;
 }
 
+.equipment-list,
 .ingredients-list {
     padding-top: 8px;
 }
