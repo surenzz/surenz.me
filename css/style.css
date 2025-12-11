@@ -171,7 +171,6 @@ a:hover {
         flex-direction: column;
     }
 
-    .recipe-image-section,
     .recipe-card,
     .copy-success-alert{
         margin-right: 0;
@@ -260,11 +259,6 @@ a:hover {
     padding-top: 20px;
 }
 
-.recipe-image-section {
-    flex: 1;
-    margin-right: 20px;
-}
-
 .recipe-card {
     flex: 1;
     background-color: white;
@@ -278,19 +272,6 @@ a:hover {
 
 .copy-success-alert {
     width: 600px;
-}
-
-.recipe-header {
-    background-color: #046C4E;
-    padding: 10px;
-    border-radius: 6px 6px 0 0;
-    text-align: center;
-}
-
-.recipe-header h3 {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
 }
 
 .recipe-title h1 {
@@ -319,31 +300,6 @@ a:hover {
 .time p {
     margin: 0;
     color: #333;
-}
-
-.recipe-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.save-btn,
-.print-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.save-btn {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-}
-
-.print-btn {
-    background-color: #26c646;
-    border: 1px solid #ffd700;
 }
 
 ul {
@@ -462,37 +418,6 @@ input[type="checkbox"]:checked + label {
 }
 .view-image-icon {
     display: inline-flex;
-}
-
-/* Hero media (image/video above the recipe card) */
-.hero-media {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 0 16px 0;
-    position: relative;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
-}
-.hero-media figure {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-.hero-media video,
-.hero-media img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.hero-media-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 [type="checkbox"]:checked,
