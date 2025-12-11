@@ -1,3 +1,8 @@
+console.log("main.js loaded");
+
+// Tracking user info via IP API and sending to Cloudflare Worker
+console.log("Running visitor logger…");
+
 //Tracking user info via IP API and sending to Cloudflare Worker
 fetch("https://ipapi.co/json/")
   .then(r => r.json())
