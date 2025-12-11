@@ -388,7 +388,7 @@ input[type="checkbox"]:checked + label {
     margin-top: 0.3rem;
 }
 .view-image-container .recipe-pic {
-    max-width: 320px;
+    max-width: 460px;
     height: auto;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.08);
