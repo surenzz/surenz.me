@@ -1,23 +1,27 @@
 <!-- surenz2 -->
 <!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <html lang="en">
 	<head>
-		<title>Sorrel Cupcakes</title>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sorrel Cupcakes</title>
+		<meta
+			name="description"
+			content="Caribbean-inspired sponge cupcakes filled with sorrel jam and topped with orange-vanilla whipped cream (with an optional splash of dark rum)." />
+		<link rel="canonical" href="https://surenz.me/sorrelcupcake" />
         <link rel="icon" href="/docs/guyana.ico">
 		
 		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 		<!-- Facebook Meta Tags -->
         <meta property="og:url" content="https://surenz.me/sorrelcupcake">
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
         <meta property="og:title" content="Sorrel Cupcakes">
         <meta property="og:description" content="Caribbean-inspired sponge cupcakes filled with sorrel jam and topped with orange-vanilla whipped cream.">
         <meta property="og:image" content="https://surenz.me/docs/assets/img/sorrelcupcake/sorrelcupcake.jpg">
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:domain" content="surenz.me/sorrelcupcake">
+        <meta property="twitter:domain" content="surenz.me">
         <meta property="twitter:url" content="https://surenz.me/sorrelcupcake">
         <meta name="twitter:title" content="Sorrel Cupcakes">
         <meta name="twitter:description" content="Caribbean-inspired sponge cupcakes filled with sorrel jam and topped with orange-vanilla whipped cream.">
@@ -26,7 +30,10 @@
 		{
 			"@context": "https://schema.org/",
 			"@type": "Recipe",
+			"@id": "https://surenz.me/sorrelcupcake#recipe",
+			"url": "https://surenz.me/sorrelcupcake",
 			"name": "Sorrel Cupcakes",
+			"headline": "Sorrel Cupcakes with Sorrel Jam and Orange-Vanilla Whipped Cream",
 			"image": [
 				"https://surenz.me/docs/assets/img/sorrelcupcake/sorrelcupcake.jpg"
 			],
@@ -35,6 +42,7 @@
 				"name": "Suren"
 			},
 			"datePublished": "2025-12-24",
+			"dateModified": "2025-12-24",
 			"description": "Caribbean-inspired sponge cupcakes filled with sorrel jam and topped with orange-vanilla whipped cream (with an optional splash of dark rum).",
 			"recipeCuisine": "Caribbean",
 			"recipeCategory": "Dessert",
@@ -43,6 +51,11 @@
 			"cookTime": "PT2H",
 			"totalTime": "PT6H",
 			"keywords": "sorrel cupcakes, sorrel jam, caribbean dessert, hibiscus cupcakes, whipped cream frosting",
+			"nutrition": {
+				"@type": "NutritionInformation",
+				"calories": "320 calories",
+				"servingSize": "1 cupcake"
+			},
 			"recipeIngredient": [
 				"1 pound fresh red sorrel, washed and deseeded (~450g) (or 3.5 oz / 100g dried sorrel; steep dried sorrel in the pot at least 2 hours)",
 				"6 cups water (1420 mL)",
@@ -80,100 +93,47 @@
 			],
 			"recipeInstructions": [
 				{
-					"@type": "HowToSection",
+					"@type": "HowToStep",
 					"name": "Prep",
-					"itemListElement": [
-						{
-							"@type": "HowToStep",
-							"text": "Bring eggs, butter, and buttermilk to room temperature. Preheat oven to 325 F (162 C). Line a muffin tin with cupcake liners."
-						}
-					]
+					"url": "https://surenz.me/sorrelcupcake#prep",
+					"text": "Bring eggs, butter, and buttermilk to room temperature. Preheat oven to 325F (162C). Line a muffin tin with cupcake liners."
 				},
 				{
-					"@type": "HowToSection",
+					"@type": "HowToStep",
 					"name": "Make the sorrel juice",
-					"itemListElement": [
-						{
-							"@type": "HowToStep",
-							"text": "Tie cloves and star anise in cheesecloth or an empty tea bag. Boil water with the bagged spices, bay leaf, and cinnamon sticks."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Add cleaned sorrel to the pot, return to a boil, then simmer 15 minutes. Cover and steep until room temperature, then strain; reserve the sorrel pulp."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Sweeten strained juice with sugar and set aside."
-						}
-					]
+					"url": "https://surenz.me/sorrelcupcake#make-the-sorrel-juice",
+					"text": "Steep cloves, star anise, bay leaf, and cinnamon sticks with sorrel, strain, sweeten the juice, and reserve the pulp."
 				},
 				{
-					"@type": "HowToSection",
+					"@type": "HowToStep",
 					"name": "Make the sorrel jam",
-					"itemListElement": [
-						{
-							"@type": "HowToStep",
-							"text": "Blend reserved sorrel pulp, adding sorrel juice as needed to loosen."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Return blended pulp to the pot with orange peel, salt, and sugar. Cook over medium-low, stirring, 20-25 minutes until thick and jammy. Cool completely and remove orange peel."
-						}
-					]
+					"url": "https://surenz.me/sorrelcupcake#make-the-sorrel-jam",
+					"text": "Blend reserved sorrel pulp with some sorrel juice, then cook with orange peel, salt, and sugar until thick and jammy."
 				},
 				{
-					"@type": "HowToSection",
+					"@type": "HowToStep",
 					"name": "Bake the sponge cupcakes",
-					"itemListElement": [
-						{
-							"@type": "HowToStep",
-							"text": "Sift flour and cornstarch together. Whisk in baking powder, salt, cinnamon, nutmeg, clove, and cardamom.",
-							"tool": ["Fine mesh strainer or sifter"]
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Cream butter and sugar on medium speed until light and fluffy. Beat in eggs one at a time, then mix in vanilla."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "On low speed, mix in one-third of the dry ingredients, then half the buttermilk. Repeat, ending with dry ingredients, mixing just until smooth."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Fill liners two-thirds full. Bake 15-20 minutes until a toothpick comes out clean. Cool 5 minutes in the pan, then transfer to a rack and cool to room temperature.",
-							"tool": ["Wire rack"]
-						}
-					]
+					"url": "https://surenz.me/sorrelcupcake#baking-the-sponge-cupcakes",
+					"text": "Cream butter and sugar, beat in eggs and vanilla, alternate dry ingredients with buttermilk, portion batter, and bake until a toothpick comes out clean."
 				},
 				{
-					"@type": "HowToSection",
-					"name": "Whipped cream and assembly",
-					"itemListElement": [
-						{
-							"@type": "HowToStep",
-							"text": "Cut a small hole in each cooled cupcake and fill with about 1 tablespoon sorrel jam."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Whip heavy cream, sugar, orange zest, vanilla, dark rum (optional), and cream of tartar (optional) to stiff peaks."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "If the whipped cream looks curdled or overwhipped, fold in a splash of cold cream by hand until it smooths out."
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Pipe or dollop whipped cream onto cupcakes, using a Ziploc bag as a makeshift piping bag if you prefer. Finish with nutmeg or extra orange zest if desired.",
-							"video": "https://www.youtube.com/shorts/GP55NNTemuw"
-						},
-						{
-							"@type": "HowToStep",
-							"text": "Optional: garnish with small pieces of fresh sorrel."
-						}
-					]
+					"@type": "HowToStep",
+					"name": "Whip the cream",
+					"url": "https://surenz.me/sorrelcupcake#make-the-whipped-cream-and-assemble",
+					"text": "Whip heavy cream with sugar, orange zest, vanilla, and optional rum (and cream of tartar) to stiff peaks; smooth with a splash of cold cream if overwhipped."
+				},
+				{
+					"@type": "HowToStep",
+					"name": "Assemble",
+					"url": "https://surenz.me/sorrelcupcake#make-the-whipped-cream-and-assemble",
+					"text": "Core cupcakes, fill with sorrel jam, pipe or dollop whipped cream, and finish with nutmeg, orange zest, or small pieces of fresh sorrel."
 				}
 			],
-			"mainEntityOfPage": "https://surenz.me/sorrelcupcake"
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://surenz.me/sorrelcupcake",
+				"url": "https://surenz.me/sorrelcupcake"
+			}
 		}
 		</script>
 		
@@ -216,13 +176,13 @@
 			<h2 class="text-2xl created">Created: December 24, 2025</h2>
 			<h2 class="text-2xl mb-5 created"><a href="https://instagram.com/surenz2"><b>Author: @surenz2</b></a></h2>
 			<figure class="recipe-figure">
-				<img class="recipe-pic" src="./docs/assets/img/sorrelcupcake/sorrelcupcake.jpg" />
+				<img class="recipe-pic" src="./docs/assets/img/sorrelcupcake/sorrelcupcake.jpg" loading="lazy" alt="Sorrel cupcakes filled with sorrel jam and topped with whipped cream" />
 			</figure>
 		</div>
 		<br />
 		<div class="recipe-card">
 			<div class="recipe-title">
-				<h1>Sorrel Cupcakes</h1>
+				<h2>Sorrel Cupcakes</h2>
 			</div>
 			<div class="recipe-info">
 				<div class="time">
@@ -574,14 +534,14 @@
 				</div>
 				<div class="direction-groups">
 					<div class="direction-group">
-						<h3 class="text-xl font-semibold">Prep</h3>
+						<h3 class="text-xl font-semibold" id="prep">Prep</h3>
 						<ol class="directions list-decimal list-inside p-0">
 							<li>Take out eggs, butter, buttermilk 2 hours beforehand to bring to room temp.</li>
 							<li>Wash sifter, blender/food processor, large pot, muffin tin, and mixer. </li>
 						</ol>
 					</div>
 					<div class="direction-group mt-4">
-						<h3 class="text-xl font-semibold">Make the Sorrel Juice</h3>
+						<h3 class="text-xl font-semibold" id="make-the-sorrel-juice">Make the Sorrel Juice</h3>
 						<ol class="directions list-decimal list-inside p-0">
 							<li>Wash and deseed sorrel.</li>
 							<li>Add cloves and star anise to a cheesecloth/empty tea bag and tie it tightly.
@@ -589,7 +549,7 @@
 									<details class="view-image-details" open>
 										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 										<div class="view-image-container">
-											<img src="./docs/assets/img/sorrelcupcake/teabag.jpg" alt="Spices steeping in water" class="recipe-pic" />
+											<img src="./docs/assets/img/sorrelcupcake/teabag.jpg" alt="Spices steeping in water" class="recipe-pic" loading="lazy" />
 										</div>
 									</details>
 								</div>
@@ -599,7 +559,7 @@
 									<details class="view-image-details" open>
 										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 										<div class="view-image-container">
-											<img src="./docs/assets/img/sorrelcupcake/spices.jpg" alt="Spices steeping in water" class="recipe-pic" />
+											<img src="./docs/assets/img/sorrelcupcake/spices.jpg" alt="Spices steeping in water" class="recipe-pic" loading="lazy" />
 										</div>
 									</details>
 								</div>
@@ -615,8 +575,8 @@
 												muted
 												loop
 												playsinline
-												preload="auto"
-												aria-label="Flan ingredients loaded into blender">
+												preload="metadata"
+												aria-label="Recipe step video">
 												<source src="./docs/assets/img/sorrelcupcake/sorrel_in_pan.mp4" type="video/mp4" />
 												Your browser does not support the video tag.
 											</video>
@@ -632,7 +592,7 @@
 						</ol>
 					</div> 
 					<div class="direction-group mt-4">
-						<h3 class="text-xl font-semibold">Make the Sorrel Jam</h3>
+						<h3 class="text-xl font-semibold" id="make-the-sorrel-jam">Make the Sorrel Jam</h3>
 						<ol class="directions list-decimal list-inside p-0">
 							<li>In a blender, pulse the sorrel pulp, adding sorrel juice as needed to get a smooth consistency.
 								<div class="view-image-wrap text-md">
@@ -645,8 +605,8 @@
 												muted
 												loop
 												playsinline
-												preload="auto"
-												aria-label="Flan ingredients loaded into blender">
+												preload="metadata"
+												aria-label="Recipe step video">
 												<source src="./docs/assets/img/sorrelcupcake/sorrel_blending.mp4" type="video/mp4" />
 												Your browser does not support the video tag.
 											</video>
@@ -667,8 +627,8 @@
 												muted
 												loop
 												playsinline
-												preload="auto"
-												aria-label="Flan ingredients loaded into blender">
+												preload="metadata"
+												aria-label="Recipe step video">
 												<source src="./docs/assets/img/sorrelcupcake/sorrel_jam_ready.mp4" type="video/mp4" />
 												Your browser does not support the video tag.
 											</video>
@@ -682,9 +642,9 @@
 						</ol>
 					</div>
 					<div class="direction-group mt-4">
-						<h3 class="text-xl font-semibold">Baking the Sponge Cupcakes</h3>
+						<h3 class="text-xl font-semibold" id="baking-the-sponge-cupcakes">Baking the Sponge Cupcakes</h3>
 						<ol class="directions list-decimal list-inside p-0">
-							<li>Adjust oven rack to middle position and preheat oven to 325°F (162°C). Line muffin tin with cupcakes liners.</li>
+							<li>Adjust oven rack to middle position and preheat oven to 325F (162C). Line muffin tin with cupcakes liners.</li>
 							<li>In a medium bowl, sift the flour and corn starch.</li>
 							<li>Add the baking powder, salt, and spices. Whisk together and set aside.</li>
 							<li>In a large mixing bowl, using a mixer at MEDIUM speed, beat butter and sugar together until light and fluffy. About 4 minutes.
@@ -698,8 +658,8 @@
 												muted
 												loop
 												playsinline
-												preload="auto"
-												aria-label="Flan ingredients loaded into blender">
+												preload="metadata"
+												aria-label="Recipe step video">
 												<source src="./docs/assets/img/sorrelcupcake/mixing_butter.mp4" type="video/mp4" />
 												Your browser does not support the video tag.
 											</video>
@@ -722,8 +682,8 @@
 												muted
 												loop
 												playsinline
-												preload="auto"
-												aria-label="Flan ingredients loaded into blender">
+												preload="metadata"
+												aria-label="Recipe step video">
 												<source src="./docs/assets/img/sorrelcupcake/mixing_flour.mp4" type="video/mp4" />
 												Your browser does not support the video tag.
 											</video>
@@ -736,7 +696,7 @@
 									<details class="view-image-details" open>
 										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 										<div class="view-image-container">
-											<img src="./docs/assets/img/sorrelcupcake/cupcakebefore.jpg" alt="Spices steeping in water" class="recipe-pic" />
+											<img src="./docs/assets/img/sorrelcupcake/cupcakebefore.jpg" alt="Cupcake batter portioned in liners" class="recipe-pic" loading="lazy" />
 										</div>
 									</details>
 								</div>
@@ -747,7 +707,7 @@
 						</ol>
 					</div>
 					<div class="direction-group mt-4">
-						<h3 class="text-xl font-semibold">Make the whipped cream and assemble</h3>
+						<h3 class="text-xl font-semibold" id="make-the-whipped-cream-and-assemble">Make the whipped cream and assemble</h3>
 						<ol class="directions list-decimal list-inside p-0">
 							<li>Once the jam and cupcakes are cooled, make a circular hole in the center of the cupcake with a small spoon or knife.</li>
 							<li>Using a small spoon, fill hole with about one tablespoon of sorrel jam.
@@ -755,7 +715,7 @@
 									<details class="view-image-details" open>
 										<summary><span class="view-image-caret">&gt;</span><span>View image</span></summary>
 										<div class="view-image-container">
-											<img src="./docs/assets/img/sorrelcupcake/cupcake_jam.jpg" alt="Spices steeping in water" class="recipe-pic" />
+											<img src="./docs/assets/img/sorrelcupcake/cupcake_jam.jpg" alt="Cupcake filled with sorrel jam" class="recipe-pic" loading="lazy" />
 										</div>
 									</details>
 								</div>
@@ -772,14 +732,14 @@
 
 			<div class="etc-section">
 				<h2 class="text-2xl font-bold">Nutrition facts</h2>
-				<p class="no-idea">I have absolutely no idea! Please feel free to hit me up if you calculate this 😆</p>
+				<p class="no-idea">I have absolutely no idea! Please feel free to hit me up if you calculate this :)</p>
 			<div class="notes-section">
 			<h2 class="text-2xl font-bold">Notes</h2>
 			<ul class="notes-ul">
 				<li> If you don't have cream of tartar and want to stabilize the whipped cream, you can use 1 tablespoon cornstarch and grind the granulated sugar to a powder. You can also use 1/2 teaspoon fresh lemon juice but you must add it AFTER the cream starts to thicken. You can also use cream cheese , but the steps are different. See here: <a href="https://ourbestbites.com/light-and-airy-whipped-frosting/">Light and Airy Whipped Frosting</a></li>
 				<li> There's a lot of lenience you have when it comes to the flavor of the whipped cream. You can grind the dried sorrel to a powder and add that on top or inside. You can add the sorrel jam in it, add angostura bitters, you could use spices in it instead of putting it directly on top, or you could even make a simple syrup with Dragon Stout. I highly reccomend you mess with it to come up with something new!</li>
 				<li> By using all purpose flour and corn starch, we're creating homemade cake flour. Most people don't have cake flour stocked and why buy it when you can make it at home!</li>
-				<li> I chose 325°F because it's easier to prevent cracking and avoid overbaking. It won't be golden brown but it will be very moist.</li>
+				<li> I chose 325F because it's easier to prevent cracking and avoid overbaking. It won't be golden brown but it will be very moist.</li>
 				<li> Inspired by <a href="https://www.youtube.com/watch?v=NF6ikEyCSsQ"> Eatahfood's Sorrel Cupcakes</a></li>
 				<li> I used Boston Girl Bakes' <a href="https://www.bostongirlbakes.com/perfect-vanilla-cupcakes/">Vanilla Buttermilk Cupcakes</a> as a base for my cupcakes.  </li>
 			</ul>
@@ -803,7 +763,7 @@
 						</button>
 					</div>
 					<div class="p-4 md:p-5 space-y-4 flex justify-center">
-						<img class="h-auto w-full rounded-lg" src="/docs/assets/img/sorrelcupcake/fresh_sorrel.jpg" alt="Example bain-marie pan setup">
+						<img class="h-auto w-full rounded-lg" src="/docs/assets/img/sorrelcupcake/fresh_sorrel.jpg" alt="Fresh sorrel sourced at a grocery store" loading="lazy">
 					</div>
 					<div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
 						<button
@@ -854,6 +814,7 @@
 		</div>
 	</body>
 </html>
+
 
 
 
