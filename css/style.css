@@ -302,6 +302,13 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.recipe-summary {
+    max-width: 52ch;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+    color: #333;
+}
+
 .recipe-info {
     display: flex;
     justify-content: space-between;
